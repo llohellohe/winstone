@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="src" path="src/test" output="target/test-classes"/>
+  <classpathentry kind="src" path="src/java"/>
+  <classpathentry kind="src" path="src/conf" including="**/*.*" excluding="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar" sourcepath="M2_REPO/javax/servlet/servlet-api/2.3/servlet-api-2.3-sources.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar" sourcepath="M2_REPO/junit/junit/3.8.1/junit-3.8.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/httpunit/httpunit/1.6/httpunit-1.6.jar" sourcepath="M2_REPO/httpunit/httpunit/1.6/httpunit-1.6-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/xerces/xmlParserAPIs/2.2.1/xmlParserAPIs-2.2.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/xerces/xercesImpl/2.6.2/xercesImpl-2.6.2.jar" sourcepath="M2_REPO/xerces/xercesImpl/2.6.2/xercesImpl-2.6.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/nekohtml/nekohtml/0.9.1/nekohtml-0.9.1.jar" sourcepath="M2_REPO/nekohtml/nekohtml/0.9.1/nekohtml-0.9.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/rhino/js/1.5R4.1/js-1.5R4.1.jar" sourcepath="M2_REPO/rhino/js/1.5R4.1/js-1.5R4.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/jtidy/jtidy/4aug2000r7-dev/jtidy-4aug2000r7-dev.jar" sourcepath="M2_REPO/jtidy/jtidy/4aug2000r7-dev/jtidy-4aug2000r7-dev-sources.jar"/>
+</classpath>

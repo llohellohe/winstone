@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+	<servlet>
+		<servlet-name>CountRequestsServlet</servlet-name>
+		<servlet-class>winstone.testApplication.servlets.CountRequestsServlet</servlet-class>    
+		<init-param>
+			<param-name>offset</param-name>
+			<param-value>1000</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CountRequestsServlet</servlet-name>
+		<url-pattern>/TestWriteAfterServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Test the welcome file processing order -->
+	<welcome-file-list>
+		<welcome-file>welcome.html</welcome-file>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>
+
+
