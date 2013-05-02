@@ -9,6 +9,11 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
+import o2.biz.Knight;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 
 /*
  * Copyright 1999-2010 Alibaba.com All right reserved. This software is the
@@ -47,6 +52,10 @@ public class HelloWorldServlet implements Servlet {
     @Override
     public void service(ServletRequest req, ServletResponse response) throws ServletException, IOException {
         // TODO Auto-generated method stub
+        ApplicationContext context = new ClassPathXmlApplicationContext("knights.xml");
+        Knight knight = (Knight) context.getBean("knight");
+        knight.embarkOnQuest();
+
         response.setContentType("text/html;charset=utf-8");  
         response.setCharacterEncoding("utf-8");  
         PrintWriter out = response.getWriter();  

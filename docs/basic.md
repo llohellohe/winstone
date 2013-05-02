@@ -27,3 +27,4 @@
 
 ####启动内部的
 enable-welcome-root 设置为false
+
