@@ -26,7 +26,7 @@ public class Server {
     public static void main(String[] args) throws IOException {
         ServerSocket server = new ServerSocket(8090);
 
-        server.setSoTimeout(10000);
+        // server.setSoTimeout(10000);
 
         int id = 0;
         while (true) {

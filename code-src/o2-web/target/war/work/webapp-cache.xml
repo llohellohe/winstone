@@ -5,10 +5,25 @@
       <path-set>
         <pathsSet class="linked-hash-set">
           <string>index.jsp</string>
+          <string>WEB-INF/spitter-servlet.xml</string>
+          <string>WEB-INF/views/home.jsp</string>
           <string>WEB-INF/web.xml</string>
+          <string>WEB-INF/classes/knights.xml</string>
+          <string>WEB-INF/classes/o2/biz/Knight.class</string>
+          <string>WEB-INF/classes/o2/biz/KnightImpl.class</string>
           <string>WEB-INF/classes/o2/web/HelloWorldServlet.class</string>
-          <string>WEB-INF/classes/o2/web/HelloWorldServlet.java</string>
+          <string>WEB-INF/classes/o2/web/mvc/HomeController.class</string>
           <string>WEB-INF/lib/servlet-api-2.5.jar</string>
+          <string>WEB-INF/lib/spring-context-3.2.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-aop-3.2.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/aopalliance-1.0.jar</string>
+          <string>WEB-INF/lib/spring-beans-3.2.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-core-3.2.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/commons-logging-1.1.1.jar</string>
+          <string>WEB-INF/lib/spring-expression-3.2.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-web-3.2.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-webmvc-3.2.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-webmvc-portlet-3.2.2.RELEASE.jar</string>
         </pathsSet>
       </path-set>
     </entry>
@@ -25,6 +40,54 @@
         <optional>false</optional>
       </dependency>
       <targetFileName>servlet-api-2.5.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>3.2.2.RELEASE</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <optional>false</optional>
+      </dependency>
+      <targetFileName>spring-context-3.2.2.RELEASE.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+        <version>3.2.2.RELEASE</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <optional>false</optional>
+      </dependency>
+      <targetFileName>spring-web-3.2.2.RELEASE.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>3.2.2.RELEASE</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <optional>false</optional>
+      </dependency>
+      <targetFileName>spring-webmvc-3.2.2.RELEASE.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc-portlet</artifactId>
+        <version>3.2.2.RELEASE</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <optional>false</optional>
+      </dependency>
+      <targetFileName>spring-webmvc-portlet-3.2.2.RELEASE.jar</targetFileName>
     </org.apache.maven.plugin.war.util.DependencyInfo>
     <org.apache.maven.plugin.war.util.DependencyInfo>
       <dependency>
