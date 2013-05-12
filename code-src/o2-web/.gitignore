@@ -1,1 +1,3 @@
 target/*
+*.war
+*target/o2-web.war
