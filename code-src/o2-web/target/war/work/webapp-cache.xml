@@ -7,12 +7,16 @@
           <string>index.jsp</string>
           <string>WEB-INF/spitter-servlet.xml</string>
           <string>WEB-INF/views/home.jsp</string>
+          <string>WEB-INF/views/home.vm</string>
+          <string>WEB-INF/views/student/show.vm</string>
           <string>WEB-INF/web.xml</string>
           <string>WEB-INF/classes/knights.xml</string>
           <string>WEB-INF/classes/o2/biz/Knight.class</string>
           <string>WEB-INF/classes/o2/biz/KnightImpl.class</string>
           <string>WEB-INF/classes/o2/web/HelloWorldServlet.class</string>
           <string>WEB-INF/classes/o2/web/mvc/HomeController.class</string>
+          <string>WEB-INF/classes/o2/web/mvc/StudentController.class</string>
+          <string>WEB-INF/classes/testcase/HomeTest.class</string>
           <string>WEB-INF/lib/servlet-api-2.5.jar</string>
           <string>WEB-INF/lib/spring-context-3.2.2.RELEASE.jar</string>
           <string>WEB-INF/lib/spring-aop-3.2.2.RELEASE.jar</string>
@@ -21,9 +25,13 @@
           <string>WEB-INF/lib/spring-core-3.2.2.RELEASE.jar</string>
           <string>WEB-INF/lib/commons-logging-1.1.1.jar</string>
           <string>WEB-INF/lib/spring-expression-3.2.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-context-support-3.2.2.RELEASE.jar</string>
           <string>WEB-INF/lib/spring-web-3.2.2.RELEASE.jar</string>
           <string>WEB-INF/lib/spring-webmvc-3.2.2.RELEASE.jar</string>
           <string>WEB-INF/lib/spring-webmvc-portlet-3.2.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/velocity-1.7.jar</string>
+          <string>WEB-INF/lib/commons-collections-3.2.1.jar</string>
+          <string>WEB-INF/lib/commons-lang-2.4.jar</string>
         </pathsSet>
       </path-set>
     </entry>
@@ -52,6 +60,18 @@
         <optional>false</optional>
       </dependency>
       <targetFileName>spring-context-3.2.2.RELEASE.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context-support</artifactId>
+        <version>3.2.2.RELEASE</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <optional>false</optional>
+      </dependency>
+      <targetFileName>spring-context-support-3.2.2.RELEASE.jar</targetFileName>
     </org.apache.maven.plugin.war.util.DependencyInfo>
     <org.apache.maven.plugin.war.util.DependencyInfo>
       <dependency>
@@ -91,9 +111,21 @@
     </org.apache.maven.plugin.war.util.DependencyInfo>
     <org.apache.maven.plugin.war.util.DependencyInfo>
       <dependency>
+        <groupId>org.apache.velocity</groupId>
+        <artifactId>velocity</artifactId>
+        <version>1.7</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <optional>false</optional>
+      </dependency>
+      <targetFileName>velocity-1.7.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>3.8.1</version>
+        <version>4.5</version>
         <type>jar</type>
         <scope>test</scope>
         <exclusions/>
