@@ -14,6 +14,7 @@
           <string>WEB-INF/classes/o2/biz/Knight.class</string>
           <string>WEB-INF/classes/o2/biz/KnightImpl.class</string>
           <string>WEB-INF/classes/o2/web/HelloWorldServlet.class</string>
+          <string>WEB-INF/classes/o2/web/mvc/BookController.class</string>
           <string>WEB-INF/classes/o2/web/mvc/HomeController.class</string>
           <string>WEB-INF/classes/o2/web/mvc/StudentController.class</string>
           <string>WEB-INF/classes/testcase/HomeTest.class</string>
@@ -32,6 +33,8 @@
           <string>WEB-INF/lib/velocity-1.7.jar</string>
           <string>WEB-INF/lib/commons-collections-3.2.1.jar</string>
           <string>WEB-INF/lib/commons-lang-2.4.jar</string>
+          <string>WEB-INF/lib/jackson-mapper-asl-1.8.5.jar</string>
+          <string>WEB-INF/lib/jackson-core-asl-1.8.5.jar</string>
         </pathsSet>
       </path-set>
     </entry>
@@ -120,6 +123,18 @@
         <optional>false</optional>
       </dependency>
       <targetFileName>velocity-1.7.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>org.codehaus.jackson</groupId>
+        <artifactId>jackson-mapper-asl</artifactId>
+        <version>1.8.5</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <optional>false</optional>
+      </dependency>
+      <targetFileName>jackson-mapper-asl-1.8.5.jar</targetFileName>
     </org.apache.maven.plugin.war.util.DependencyInfo>
     <org.apache.maven.plugin.war.util.DependencyInfo>
       <dependency>

@@ -7,6 +7,8 @@
  */
 package o2.web.mvc;
 
+import java.io.UnsupportedEncodingException;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,8 +16,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * ÀàStudentController.javaµÄÊµÏÖÃèÊö£ºTODO ÀàÊµÏÖÃèÊö 
- * @author yangqi 2013-5-12 ÏÂÎç12:19:10
+ * ï¿½ï¿½StudentController.javaï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½TODO ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 
+ * @author yangqi 2013-5-12 ï¿½ï¿½ï¿½ï¿½12:19:10
  */
 @Controller
 @RequestMapping("/student")
@@ -23,10 +26,12 @@ public class StudentController {
 
     @RequestMapping(value = "/show", method = RequestMethod.GET)
     public String showStudent(@RequestParam("name")
-    String name, Model model) {
+    String name, Model model) throws UnsupportedEncodingException {
 
+        // name = new String(name.getBytes("iso8859-1"), "utf-8");
         System.out.println("name is " + name);
         model.addAttribute("name", name);
+
         return "student/show";
     }
 
