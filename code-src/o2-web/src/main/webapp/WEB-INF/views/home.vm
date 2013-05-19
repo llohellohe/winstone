@@ -4,5 +4,5 @@
 <meta charset="UTF-8"/>
 </head>
 <body>
-hello velocity $spittles
+hello velocity $spittles ,with count $count
 </body>

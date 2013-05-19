@@ -15,15 +15,18 @@ import org.junit.Test;
 
 
 /**
- * ÀàHomeTest.javaµÄÊµÏÖÃèÊö£ºTODO ÀàÊµÏÖÃèÊö 
- * @author yangqi 2013-5-12 ÉÏÎç11:31:43
+ * ï¿½ï¿½HomeTest.javaï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½TODO ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 
+ * @author yangqi 2013-5-12 ï¿½ï¿½ï¿½ï¿½11:31:43
  */
 public class HomeTest {
 
 
     @Test
-    public void testShowHomePage() {
+    public void testShowHomePage() throws InterruptedException {
         HomeController c = new HomeController();
         c.showHomePage(new HashMap<String, Object>());
+
+        Thread.sleep(Long.MAX_VALUE);
     }
 }
